@@ -149,44 +149,38 @@ video {
 }
 /* スキルセットセクション */
 .skillset {
-    text-align: center;
-    background-color: #f8f8f2;
+    margin: 30px 0;
     padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8; /* 背景色 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.skillset h3 {
+.skillset h2 {
+    text-align: center;
     font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-title h3 {
+    font-size: 1.5rem;
     color: #2c3e50;
     margin-bottom: 10px;
 }
 
-.skillset .skill-list {
-    margin-top: 20px;
-}
-
-.skillset .skill-list p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.add-skill-btn {
-    background-color: #d4a373;
-    color: #fff;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.add-skill-btn:hover {
-    background-color: #c5895c;
+.skill p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
 }
