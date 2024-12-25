@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオサイト</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>今野貴仁のポートフォリオ</h1>
+        <p>Webデザインとプログラミングの世界へようこそ</p>
+    </header>
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+            <li><button onclick="navigateTo('main')">メインページ</button></li>
+            <li><button onclick="navigateTo('about')">自己紹介</button></li>
+            <li><button onclick="navigateTo('works')">作品紹介</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="main" class="page">
+            <h2>メインページ</h2>
+            <p>このサイトは私のポートフォリオサイトです。作品や自己紹介を通じて、私のスキルや経験をお伝えします。</p>
+            <video controls width="100%">
+                <source src="./img/画面収録.mp4" type="video/mp4">
+                お使いのブラウザは動画タグに対応していません。
+            </video>
+        </section>
+        <section id="about" class="page hidden">
+            <h2>自己紹介</h2>
+            <p>こんにちは！私はゲームクリエイターを目指す学生です。</p>
+            <img src="https://source.unsplash.com/random/600x400?portrait" alt="自己紹介画像" class="responsive-image">
+            <h2>スキルセット</h2>
+            <p>スキルについて書く。</p>
+        </section>
+        <section id="works" class="page hidden">
+            <h2>作品紹介</h2>
+            <p>これまでに制作した作品を以下に紹介します。</p>
+            <div>
+                <h3>作品1</h3>
+                <video controls width="100%">
+                    <source src="./img/画面収録.mp4" type="video/mp4">
+                    お使いのブラウザは動画タグに対応していません。
+                </video>
+                <p>この作品はWebアプリケーションです。主にフロントエンドのデザインに重点を置きました。</p>
+            </div>
+            <div>
+                <h3>作品2</h3>
+                <video controls width="100%">
+                    <source src="./img/フィクション_今野_1.mp4" type="video/mp4">
+                    お使いのブラウザは動画タグに対応していません。
+                </video>
+                <p>こちらはレスポンシブデザインを取り入れたウェブサイトです。</p>
+            </div>
+            <div>
+                <h3>作品3</h3>
+                <img src="./img/IMG_3099.jpeg" alt="作品1" class="responsive-image">
+                <p>この作品はWebアプリケーションです。主にフロントエンドのデザインに重点を置きました。</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 今野貴仁. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
