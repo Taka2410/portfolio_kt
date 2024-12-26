@@ -100,7 +100,7 @@ nav .menu-toggle {
     nav .menu li button {
         color: #fff; /* テキスト色を白に設定 */
         font-weight: bold;
-        font-size: 0.9rem; /* テキストサイズを少し小さく調整 */
+        font-size: 0.7rem; /* テキストサイズを少し小さく調整 */
     }
 
     nav .menu-toggle {
