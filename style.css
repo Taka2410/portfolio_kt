@@ -113,6 +113,13 @@ main {
     margin-top: 120px;
     padding: 20px;
 }
+/* ヘッダー以外の h2, h3, p を中央揃え */
+h2,h3, p {
+    text-align: center; /* テキストを中央揃え */
+    margin-left: auto;  /* 左右の余白を自動調整 */
+    margin-right: auto;
+}
+
 
 /* ページ */
 .page {
@@ -141,36 +148,42 @@ footer {
     margin: 20px auto; /* 上下に余白を追加 */
 }
 
-video {
-    max-width: 80%; /* 幅を80%に縮小 */
-    height: auto; /* アスペクト比を保つ */
+iframe {
+    width: 100%; /* 横幅を親要素に合わせる */
+    max-width: 1200px; /* 最大幅を1200pxに制限 */
+    aspect-ratio: 16 / 9; /* アスペクト比を16:9に維持 */
     display: block;
-    margin: 20px auto; /* 上下に余白を追加 */
+    margin: 20px auto; /* 中央揃えと上下の余白 */
+    border: none; /* 枠線を削除 */
 }
-/* スキルセットセクション */
+
+/* Skillset全体のスタイル */
 .skillset {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #f8f8f8; /* 背景色 */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto; /* 上下の余白を確保して中央揃え */
+    padding: 20px; /* 内側の余白を追加 */
+    background-color: #ffffff; /* 背景色を白に設定 */
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    max-width: 800px; /* 幅の最大値を指定 */
+    border: 1px solid #dcdcdc; /* 薄い境界線を追加 */
+    text-align: center; /* 全体を中央揃え */
 }
 
+/* Skillsetタイトルのスタイル */
 .skillset h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #333;
-    display: inline-block;
-    padding-bottom: 5px;
+    text-align: center; /* タイトルを中央揃え */
+    font-size: 1.8rem; /* フォントサイズを設定 */
+    color: #333; /* 文字色を設定 */
+    margin-bottom: 20px; /* 下部に余白を追加 */
+    border-bottom: 2px solid #333; /* 下線を追加 */
+    display: inline-block; /* サイズ調整 */
+    padding-bottom: 5px; /* 下部の余白を追加 */
 }
 
+
+/* 各スキルのスタイル */
 .skill {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* 各スキルの間隔 */
 }
 
 .skill-title h3 {
